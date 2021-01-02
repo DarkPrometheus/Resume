@@ -1,8 +1,8 @@
-# Curriculum
+# Resume
 ## Emmanuel Frias Aviña
-email: emmanuel_frias16@hotmail.com
-phone number: 664 --- ----
-website: https://bit.ly/EmmProjects
+- email: emmanuel_frias16@hotmail.com
+- phone number: 664 --- ----
+- website: https://bit.ly/EmmProjects
 
 I'm a computer engineering student. I enjoy learning and working
         on my computer. I consider that I have critical thinking and ability to
