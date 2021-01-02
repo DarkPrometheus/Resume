@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 1rem;
+}
+
+img {
+  height: 20px;
+  width: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.Curriculum {
+  margin-left: 20vw;
+  padding: 2rem;
+  width: 60%;
+  height: fit-content;
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.7rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+
+p,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+}
+
+hr {
+  margin-bottom: 0.5rem;
+}
+
+li {
+  margin-left: 2rem;
+}
+
+.Curriculum div,
+.margen-top,
+h4 {
+  margin-top: 1rem;
+}
+
+footer,
+nav {
+  height: 5vh;
+  background-color: #262626;
+}
+
+footer {
+  padding-left: 1rem;
+  bottom: absolute;
+  position: 0;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer div a {
+  color: white;
+}
+
+div a,
+li {
+  color: black;
+}
+
+.fas {
+  cursor: pointer;
+}

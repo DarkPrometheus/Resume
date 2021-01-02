@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <a href="#">es <img src="./img/espana.png" alt="es" /></a>
+      <a href="./index.html">en <img src="./img/eua.png" alt="" /></a>
+    </nav>
+
+    <div class="Curriculum">
+      <h1>Emmanuel Frias Aviña</h1>
+      <div class="datosContacto">
+        <p>
+          <b>email:</b> <i id="email">emmanuel_frias16@hotmail.com</i>
+          <i
+            class="fas fa-copy botonCopiar"
+            id="copyEmail"
+            onclick="CopyToClipboard('email')"
+          ></i>
+        </p>
+        <p>
+          <b>phone number:</b> <i id="phone">664 --- ----</i>
+          <i
+            class="fas fa-copy botonCopiar"
+            onclick="CopyToClipboard('phone')"
+          ></i>
+        </p>
+        <p>
+          <b>website:</b>
+          <a href="https://darkprometheus.github.io"
+            >https://darkprometheus.github.io</a
+          >
+        </p>
+      </div>
+      <p class="margen-top">
+        Soy <b>estudiante de ingeieria informatica</b>. Disfruto trabajando y
+        aprendiendo en mi computadora. Considero que tengo pensamiento critico y
+        habilidad para resolver problemas.
+      </p>
+
+      <div class="conocimiento">
+        <h2>Areas de conocimiento</h2>
+        <hr />
+
+        <ul>
+          <li>
+            Abilidades desarrollando aplicaciones de escritorio con <b>C#</b>
+          </li>
+          <li><b>SQLite</b></li>
+          <li>Pequeños projectos usando <b>React</b></li>
+          <li><b>Markdown</b></li>
+          <li><b>Git</b> y <b>github</b></li>
+        </ul>
+      </div>
+
+      <div class="experienciaProfecional">
+        <h2>Experiencia profecional</h2>
+        <hr />
+        <h3>Mis projectos</h3>
+        <h4>React</h4>
+        <li>
+          <a href="https://github.com/DarkPrometheus/WarzoneApp/tree/master"
+            >WarzoneApp</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/DarkPrometheus/Intelli-Weather"
+            >Intelli weather</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/DarkPrometheus/GifExpertApp"
+            >GifExpertApp</a
+          >
+        </li>
+
+        <h4>C#</h4>
+        <li>
+          <a href="https://github.com/DarkPrometheus/Ejercicios"
+            >Ejercicios varios en C#</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/DarkPrometheus/CityComparator"
+            >City comparator</a
+          >
+        </li>
+        <!--<h3>Nombre empresa - Puesto - Fecha</h3>
+        <p>"Descripcion"</p>-->
+      </div>
+
+      <div class="Idiomas">
+        <h2>Idiomas</h2>
+        <hr />
+
+        <ul>
+          <li>Español - nativo</li>
+          <li>Ingles - B1</li>
+        </ul>
+      </div>
+
+      <div class="Hobiies">
+        <h2>Hobbies</h2>
+        <hr />
+
+        <ul>
+          <li>Video juegos</li>
+          <li>Ciencia</li>
+          <li>Tecnologia</li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div>
+        Iconos diseñados por
+        <a href="https://www.flaticon.es/autores/freepik" title="Freepik"
+          >Freepik</a
+        >
+        de
+        <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/54f6399047.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function CopyToClipboard(id_elemento) {
+        // Crea un campo de texto "oculto"
+        var aux = document.createElement("input");
+
+        // Asigna el contenido del elemento especificado al valor del campo
+        aux.setAttribute(
+          "value",
+          document.getElementById(id_elemento).innerHTML
+        );
+
+        // Añade el campo a la página
+        document.body.appendChild(aux);
+
+        // Selecciona el contenido del campo
+        aux.select();
+
+        // Copia el texto seleccionado
+        document.execCommand("copy");
+
+        // Elimina el campo de la página
+        document.body.removeChild(aux);
+      }
+    </script>
+  </body>
+</html>
