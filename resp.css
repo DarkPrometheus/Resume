@@ -26,6 +26,9 @@
     .mainContent h2{
         font-size: 2rem;
     }
+    body{
+        height: auto;
+    }
 }
 
 @media (max-width: 1024px){
