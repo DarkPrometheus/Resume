@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,6 +9,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      console.log("Todo listo");
+      var botonCopiar = $(".botonCopiar");
+
+      botonCopiar.click(function () {
+        $(this).addClass("Clicado");
+        setInterval(function () {
+          botonCopiar.removeClass("Clicado")
+        }, 2500);
+        // alert("Copied!!");
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -19,87 +36,102 @@
 
   <div class="Curriculum">
     <h1>Emmanuel Frias Aviña</h1>
-    <div class="datosContacto">
-      <p>
-        <b>email:</b> <i id="email">emmanuel_frias16@hotmail.com</i>
-        <i class="fas fa-copy botonCopiar" id="copyEmail" onclick="CopyToClipboard('email')"></i>
-      </p>
-      <p>
-        <b>phone number:</b> <i id="phone">664 --- ----</i>
-        <i class="fas fa-copy botonCopiar" onclick="CopyToClipboard('phone')"></i>
-      </p>
-      <p>
-        <b>website:</b>
-        <a href="https://bit.ly/EmmProjects">https://bit.ly/EmmProjects</a>
-      </p>
-    </div>
-    <p class="margen-top">
-      Soy <b>estudiante de ingeieria informatica</b>. Disfruto trabajando y
-      aprendiendo en mi computadora. Considero que tengo pensamiento critico y
-      habilidad para resolver problemas.
-    </p>
+    <section>
+      <div class="contactData">
+        <div>
+          <b>Correo:</b><i id="email">emmanuel_frias16@hotmail.com</i>
+          <i class="fas fa-copy botonCopiar" id="copyEmail" onclick="CopyToClipboard('email')"></i>
+        </div>
+        <div>
+          <!-- phone number -->
+        </div>
+        <div>
+          <b>Sitio web:</b>
+          <a href="https://bit.ly/EmmProjects">https://bit.ly/EmmProjects</a>
+        </div>
+        <div class="socialMedia">
+          <div>
+            <div>
+              <a href="https://www.linkedin.com/in/emmanuel-frias-aviña-741184196/">
+                <img src="./img/linkedin.png" alt="">
+              </a>
+            </div>
+            <a href="https://www.linkedin.com/in/emmanuel-frias-aviña-741184196/">
+              <p>Emmanuel Frias Aviña</p>
+            </a>
+          </div>
+          <!-- Social media -->
+        </div>
+      </div>
 
-    <div class="conocimiento">
-      <h2>Areas de conocimiento</h2>
-      <hr />
+      <div class="mainContent">
+        <p>
+          Soy <b>estudiante de ingeieria informatica</b>. Disfruto trabajando y
+          aprendiendo en mi computadora. Considero que tengo pensamiento critico y
+          habilidad para resolver problemas.
+        </p>
 
-      <ul>
-        <li>
-          Abilidades desarrollando aplicaciones de escritorio con <b>C#</b>
-        </li>
-        <li><b>SQLite</b></li>
-        <li>Pequeños projectos usando <b>React</b></li>
-        <li><b>Markdown</b></li>
-        <li><b>Git</b> y <b>github</b></li>
-      </ul>
-    </div>
+        <div class="knowledge">
+          <h2>Areas de conocimiento</h2>
+          <hr />
 
-    <div class="experienciaProfecional">
-      <h2>Experiencia profecional</h2>
-      <hr />
-      <h3>Mis projectos</h3>
-      <h4>React</h4>
-      <li>
-        <a href="http://bit.ly/EmmWarzoneApp">WarzoneApp</a>
-      </li>
-      <li>
-        <a href="http://bit.ly/EmmIntelliWeather">Intelli weather</a>
-      </li>
-      <li>
-        <a href="http://bit.ly/EmmGifExpertApp">GifExpertApp</a>
-      </li>
+          <ul>
+            <li>Abilidades desarrollando aplicaciones de escritorio con <b>C#</b></li>
+            <li><b>SQLite</b></li>
+            <li>Pequeños projectos usando <b>React</b></li>
+            <li><b>Markdown</b></li>
+            <li><b>Git</b> y <b>github</b></li>
+          </ul>
+        </div>
 
-      <h4>C#</h4>
-      <li>
-        <a href="http://bit.ly/EmmCSharpEjercicios">Various exercises in C#</a>
-      </li>
-      <li>
-        <a href="http://bit.ly/EmmCityComparator">City comparator</a>
-      </li>
-      <!--<h3>Nombre empresa - Puesto - Fecha</h3>
-        <p>"Descripcion"</p>-->
-    </div>
+        <div class="profecionalExperience">
+          <h2>Experiencia profecional</h2>
+          <hr />
+          <h3>Mis propios projectos</h3>
+          <h4>React</h4>
+          <li>
+            <a href="http://bit.ly/EmmWarzoneApp">WarzoneApp</a>
+          </li>
+          <li>
+            <a href="http://bit.ly/EmmIntelliWeather">Intelli weather</a>
+          </li>
+          <li>
+            <a href="http://bit.ly/EmmGifExpertApp">GifExpertApp</a>
+          </li>
 
-    <div class="Idiomas">
-      <h2>Idiomas</h2>
-      <hr />
+          <h4>C#</h4>
+          <li>
+            <a href="http://bit.ly/EmmCSharpEjercicios">Various exercises in C#</a>
+          </li>
+          <li>
+            <a href="http://bit.ly/EmmCityComparator">City comparator</a>
+          </li>
+          <!--<h3>Nombre empresa - Puesto - Fecha</h3>
+            <p>"Descripcion"</p>-->
+        </div>
 
-      <ul>
-        <li>Español - nativo</li>
-        <li>Ingles - B1</li>
-      </ul>
-    </div>
+        <div class="lenguages">
+          <h2>Idiomas</h2>
+          <hr />
 
-    <div class="Hobiies">
-      <h2>Hobbies</h2>
-      <hr />
+          <ul>
+            <li>Español - Native</li>
+            <li>Ingles - B1</li>
+          </ul>
+        </div>
 
-      <ul>
-        <li>Video juegos</li>
-        <li>Ciencia</li>
-        <li>Tecnologia</li>
-      </ul>
-    </div>
+        <div class="hobbies">
+          <h2>Hobbies</h2>
+          <hr />
+
+          <ul>
+            <li>Video juegos</li>
+            <li>Ciencia</li>
+            <li>Tecnologia</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </div>
   <footer>
     <div>
@@ -109,6 +141,7 @@
       <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
     </div>
   </footer>
+
   <script src="https://kit.fontawesome.com/54f6399047.js" crossorigin="anonymous"></script>
 
   <script>

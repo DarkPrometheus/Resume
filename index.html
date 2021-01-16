@@ -1,157 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curriculum</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <nav>
-      <a href="./index-es.html">es <img src="./img/espana.png" alt="es" /></a>
-      <a href="#">en <img src="./img/eua.png" alt="" /></a>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
 
-    <div class="Curriculum">
-      <h1>Emmanuel Frias Aviña</h1>
-      <div class="datosContacto">
-        <p>
-          <b>email:</b> <i id="email">emmanuel_frias16@hotmail.com</i>
-          <i
-            class="fas fa-copy botonCopiar"
-            id="copyEmail"
-            onclick="CopyToClipboard('email')"
-          ></i>
-        </p>
-        <p>
-          <b>phone number:</b> <i id="phone">664 --- ----</i>
-          <i
-            class="fas fa-copy botonCopiar"
-            onclick="CopyToClipboard('phone')"
-          ></i>
-        </p>
-        <p>
-          <b>website:</b>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      console.log("Todo listo");
+      var botonCopiar = $(".botonCopiar");
+
+      botonCopiar.click(function () {
+        $(this).addClass("Clicado");
+        setInterval(function () {
+          botonCopiar.removeClass("Clicado")
+        }, 2500);
+        // alert("Copied!!");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <nav>
+    <a href="./index-es.html">es <img src="./img/espana.png" alt="es" /></a>
+    <a href="#">en <img src="./img/eua.png" alt="" /></a>
+  </nav>
+
+  <div class="Curriculum">
+    <h1>Emmanuel Frias Aviña</h1>
+    <section>
+      <div class="contactData">
+        <div>
+          <b>Email:</b><i id="email">emmanuel_frias16@hotmail.com</i>
+          <i class="fas fa-copy botonCopiar" id="copyEmail" onclick="CopyToClipboard('email')"></i>
+        </div>
+        <div>
+          <!-- phone number -->
+        </div>
+        <div>
+          <b>Website:</b>
           <a href="https://bit.ly/EmmProjects">https://bit.ly/EmmProjects</a>
+        </div>
+        <div class="socialMedia">
+          <div>
+            <div>
+              <a href="https://www.linkedin.com/in/emmanuel-frias-aviña-741184196/">
+                <img src="./img/linkedin.png" alt="">
+              </a>
+            </div>
+            <a href="https://www.linkedin.com/in/emmanuel-frias-aviña-741184196/">
+              <p>Emmanuel Frias Aviña</p>
+            </a>
+          </div>
+          <!-- Social media -->
+        </div>
+      </div>
+
+      <div class="mainContent">
+        <p>
+          I'm a <b>computer engineering student</b>. I enjoy learning and working
+          on my computer. I consider that I have critical thinking and ability to
+          solve problems.
         </p>
+
+        <div class="knowledge">
+          <h2>Areas of knowledge</h2>
+          <hr />
+
+          <ul>
+            <li>Skills developing desktops aplications with <b>C#</b></li>
+            <li><b>SQLite</b></li>
+            <li>Small projects using <b>React</b></li>
+            <li><b>Markdown</b></li>
+            <li><b>Git</b> and <b>github</b></li>
+          </ul>
+        </div>
+
+        <div class="profecionalExperience">
+          <h2>Professional experience</h2>
+          <hr />
+          <h3>My own projects</h3>
+          <h4>React</h4>
+          <li>
+            <a href="http://bit.ly/EmmWarzoneApp">WarzoneApp</a>
+          </li>
+          <li>
+            <a href="http://bit.ly/EmmIntelliWeather">Intelli weather</a>
+          </li>
+          <li>
+            <a href="http://bit.ly/EmmGifExpertApp">GifExpertApp</a>
+          </li>
+
+          <h4>C#</h4>
+          <li>
+            <a href="http://bit.ly/EmmCSharpEjercicios">Various exercises in C#</a>
+          </li>
+          <li>
+            <a href="http://bit.ly/EmmCityComparator">City comparator</a>
+          </li>
+          <!--<h3>Nombre empresa - Puesto - Fecha</h3>
+            <p>"Descripcion"</p>-->
+        </div>
+
+        <div class="lenguages">
+          <h2>Lenguages</h2>
+          <hr />
+
+          <ul>
+            <li>Spanish - Native</li>
+            <li>English - B1</li>
+          </ul>
+        </div>
+
+        <div class="hobbies">
+          <h2>Hobbies</h2>
+          <hr />
+
+          <ul>
+            <li>Video games</li>
+            <li>Science</li>
+            <li>Technology</li>
+          </ul>
+        </div>
       </div>
-      <p class="margen-top">
-        I'm a <b>computer engineering student</b>. I enjoy learning and working
-        on my computer. I consider that I have critical thinking and ability to
-        solve problems.
-      </p>
-
-      <div class="conocimiento">
-        <h2>Areas of knowledge</h2>
-        <hr />
-
-        <ul>
-          <li>Skills developing desktops aplications with <b>C#</b></li>
-          <li><b>SQLite</b></li>
-          <li>Small projects using <b>React</b></li>
-          <li><b>Markdown</b></li>
-          <li><b>Git</b> and <b>github</b></li>
-        </ul>
-      </div>
-
-      <div class="experienciaProfecional">
-        <h2>Professional experience</h2>
-        <hr />
-        <h3>My own projects</h3>
-        <h4>React</h4>
-        <li>
-          <a href="http://bit.ly/EmmWarzoneApp">WarzoneApp</a>
-        </li>
-        <li>
-          <a href="http://bit.ly/EmmIntelliWeather">Intelli weather</a>
-        </li>
-        <li>
-          <a href="http://bit.ly/EmmGifExpertApp">GifExpertApp</a>
-        </li>
-
-        <h4>C#</h4>
-        <li>
-          <a href="http://bit.ly/EmmCSharpEjercicios"
-            >Various exercises in C#</a
-          >
-        </li>
-        <li>
-          <a href="http://bit.ly/EmmCityComparator">City comparator</a>
-        </li>
-        <!--<h3>Nombre empresa - Puesto - Fecha</h3>
-        <p>"Descripcion"</p>-->
-      </div>
-
-      <div class="Idiomas">
-        <h2>Lenguages</h2>
-        <hr />
-
-        <ul>
-          <li>Spanish - native</li>
-          <li>English - B1</li>
-        </ul>
-      </div>
-
-      <div class="Hobiies">
-        <h2>Hobbies</h2>
-        <hr />
-
-        <ul>
-          <li>Video games</li>
-          <li>Science</li>
-          <li>Technology</li>
-        </ul>
-      </div>
+    </section>
+  </div>
+  <footer>
+    <div>
+      Icons
+      <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a>
+      from
+      <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
     </div>
-    <footer>
-      <div>
-        Iconos diseñados por
-        <a href="https://www.flaticon.es/autores/freepik" title="Freepik"
-          >Freepik</a
-        >
-        from
-        <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
-      </div>
-    </footer>
+  </footer>
 
-    <script
-      src="https://kit.fontawesome.com/54f6399047.js"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://kit.fontawesome.com/54f6399047.js" crossorigin="anonymous"></script>
 
-    <script>
-      function CopyToClipboard(id_elemento) {
-        // Crea un campo de texto "oculto"
-        var aux = document.createElement("input");
+  <script>
+    function CopyToClipboard(id_elemento) {
+      // Crea un campo de texto "oculto"
+      var aux = document.createElement("input");
 
-        // Asigna el contenido del elemento especificado al valor del campo
-        aux.setAttribute(
-          "value",
-          document.getElementById(id_elemento).innerHTML
-        );
+      // Asigna el contenido del elemento especificado al valor del campo
+      aux.setAttribute(
+        "value",
+        document.getElementById(id_elemento).innerHTML
+      );
 
-        // Añade el campo a la página
-        document.body.appendChild(aux);
+      // Añade el campo a la página
+      document.body.appendChild(aux);
 
-        // Selecciona el contenido del campo
-        aux.select();
+      // Selecciona el contenido del campo
+      aux.select();
 
-        // Copia el texto seleccionado
-        document.execCommand("copy");
+      // Copia el texto seleccionado
+      document.execCommand("copy");
 
-        // Elimina el campo de la página
-        document.body.removeChild(aux);
-      }
-    </script>
-  </body>
+      // Elimina el campo de la página
+      document.body.removeChild(aux);
+    }
+  </script>
+</body>
+
 </html>
