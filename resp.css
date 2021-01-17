@@ -34,6 +34,7 @@
 @media (max-width: 1024px){
     body{
         background-color: #262626;
+        background-image: none;
     }
     .Curriculum{
         width: 100%;

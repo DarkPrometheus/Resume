@@ -8,6 +8,11 @@ body{
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  background-image: url("./img/25776.jpg");
+  background-size: cover;
+}
+
+html{
 }
 
 h1,
@@ -41,10 +46,9 @@ nav a {
 /* Content */
 h1 {
   font-size: 3rem;
-  background-color: #19d3da;
-  width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 h2 {
   font-size: 2rem;
@@ -57,6 +61,7 @@ h4 {
 }
 
 .Curriculum {
+  background-color: #41B7D1;
   width: 63%;
   height: fit-content;
   border-left: 2px black solid;
@@ -72,7 +77,7 @@ section{
 .contactData{
   padding-top: 1rem;
   padding-left: .5rem;
-  background-color: #373a40;
+  background-color: #E0E0E2;
 }
 
 .contactData div{
@@ -81,10 +86,6 @@ section{
 
 .contactData div #email{
   margin-left: .3rem;
-}
-
-.contactData, .contactData div a{
-  color: rgb(207, 207, 207);
 }
 
 .contactData b{
@@ -104,20 +105,13 @@ section{
   margin-left: .5rem;
 }
 
-.socialMedia div div{
-  border-radius: 8px;
-  width: max-content;
-  height: 18px;
-  background-color: white;
-}
-
 .socialMedia div div a img{
   height: 27px;
   width: 25px;
 }
 
 .mainContent{
-  background-color: #686d76;
+  background-color: #FAFAFA;
   padding: 1rem;
 }
 
