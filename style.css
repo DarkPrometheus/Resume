@@ -12,9 +12,6 @@ body{
   background-size: cover;
 }
 
-html{
-}
-
 h1,
 h2,
 h3,
@@ -44,24 +41,45 @@ nav a {
 }
 
 /* Content */
-h1 {
-  font-size: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
+.Title{
+  color: white;
 }
-h2 {
+
+h1 {
+  font-size: 2rem;
+  padding: 5rem 0rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
+
+hr{
+  width: 75%;
+  border-color: wheat;
+  align-items: center;
+  margin-left: 12.5%;
+}
+.Name{
+  padding-bottom: 4rem;
+  font-size: 1.7rem;
+}
+h2, h3, .Name {
+  text-align: center;
+}
+
+h2{
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.7rem;
 }
 h4 {
   font-size: 1.4rem;
+  margin-left: 12.5%;
 }
 
 .Curriculum {
-  background-color: #41B7D1;
+  background-color: #242424;
   width: 63%;
   height: fit-content;
   border-left: 2px black solid;
@@ -74,10 +92,23 @@ section{
   font-family: 'Fraunces', serif;
 }
 
+/* Contact data */
+
 .contactData{
   padding-top: 1rem;
   padding-left: .5rem;
   background-color: #E0E0E2;
+}
+
+.contactData .contactTitle{
+  background-color: white;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+  padding: 1rem 0rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .contactData div{
@@ -92,27 +123,31 @@ section{
   font-size: 1.2rem;
 }
 
-.socialMedia div{
-  display: flex;
-}
-
-.socialMedia div a{
+.socialMedia a{
   text-decoration: none;
+  display: flex;
+  font-size: 1.2rem;
+  align-items: center;
 }
 
-.socialMedia div p{
-  margin-top: .3rem;
-  margin-left: .5rem;
+.socialMedia a i{
+  font-size: 2rem;
 }
 
-.socialMedia div div a img{
-  height: 27px;
-  width: 25px;
+.socialMedia a p{
+  padding-left: .5rem;
 }
+
+/* Main content */
 
 .mainContent{
   background-color: #FAFAFA;
   padding: 1rem;
+}
+
+.Width, .mainContent hr, .mainContent ul, h4{
+  width: 90%;
+  margin-left: 5%;
 }
 
 .mainContent p, .mainContent li, .mainContent a{
@@ -132,15 +167,6 @@ section{
   margin-top: .3rem;
 }
 
-.knowledge ul{
-  margin-left: 2.1rem;
-}
-
-.knowledge ul li, .profecionalExperience li{
-  margin-bottom: .3rem;
-  list-style:square;
-}
-
 .profecionalExperience li{
   margin-left: 1rem;
 }
@@ -149,13 +175,13 @@ section{
   margin-bottom: 0rem;
 }
 
-.lenguages ul li, .hobbies ul li{
+.mainContent ul li{
   margin-bottom: .3rem;
-  margin-left: 2.1rem;
   list-style:square;
 }
 
 /* footer */
+
 footer,
 nav {
   height: 5vh;
