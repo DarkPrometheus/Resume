@@ -2,176 +2,179 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resume</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="./resp.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Resume</title>
+   <link rel="stylesheet" href="./css/styles.min.css" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" />
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
 
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script>
-    $(document).ready(function () {
-      console.log("Todo listo");
-      var botonCopiar = $(".botonCopiar");
+   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   <script>
+      $(document).ready(function() {
+         console.log("Todo listo");
+         var botonCopiar = $(".botonCopiar");
 
-      botonCopiar.click(function () {
-        $(this).addClass("Clicado");
-        setInterval(function () {
-          botonCopiar.removeClass("Clicado")
-        }, 2500);
-        // alert("Copied!!");
+         botonCopiar.click(function() {
+            $(this).addClass("Clicado");
+            setInterval(function() {
+               botonCopiar.removeClass("Clicado")
+            }, 2500);
+            // alert("Copied!!");
+         });
       });
-    });
-  </script>
+   </script>
 </head>
 
 <body>
-  <nav>
-    <a href="./index-es.html">es <img src="./img/espana.png" alt="es" /></a>
-    <a href="#">en <img src="./img/eua.png" alt="" /></a>
-  </nav>
+   <nav>
+      <a href="./index-es.html">ES<img src="./img/espana.png" alt="es" /></a>
+   </nav>
+   <div class="Curriculum">
+      <h2 class="Title">Informatics Engineering student</h1>
+         <hr>
+         <h1 class="Name">Emmanuel Frias Aviña</h1>
+         <section>
+            <div class="contactData">
+               <div class="title">Contact</div>
+               <hr />
+               <div>
+                  <b>Email:</b>
+                  <i id="email">emmanuelfriasdev@gmail.com</i>
+                  <i class="fas fa-copy botonCopiar" id="copyEmail" onclick="CopyToClipboard('email')"></i>
+               </div>
+               <div>
+                  <b>Website:</b>
+                  <a href="https://emmanuelfrias.com" target="_blank" rel="noopener noreferrer">emmanuelfrias.com</a>
+               </div>
+               <div class="socialMedia">
+                  <a href="https://www.linkedin.com/in/emmanuel-frias-aviña-741184196/" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-linkedin"></i>
+                     <p>Emmanuel Frias Aviña</p>
+                  </a>
+                  <a href="https://github.com/DarkPrometheus" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-github-square"></i>
+                     <p>DarkPrometheus</p>
+                  </a>
+                  <a href="#">
+                     <i class="fab fa-discord"></i>
+                     <p>Emmanuel.#0725</p>
+                  </a>
+               </div>
+               <div class="education">
+                  <h2 class="title">Education</h2>
+                  <hr />
+                  <div>
+                     <p><b>Informatics Engineering</b></p>
+                     <p>Instituto Tecnologico de Tijuana</p>
+                     <p>2017 - 2022</p>
+                  </div>
+               </div>
+            </div>
+            <div class="mainContent">
+               <h2>About me</h2>
+               <hr>
+               <p class="Width">
+                  I'm a <b>computer engineering student</b> I enjoy working and learning on my computer. I really like the .NET platform and web development, which are the two technologies that I master the most.
+               </p>
+               <div class="knowledge">
+                  <h2>Areas of knowledge</h2>
+                  <hr />
+                  <ul>
+                     <li>Web development <b>HTML, CSS y JS</b></li>
+                     <li><b>React JS</b></li>
+                     <li><b>SQLite</b></li>
+                     <li><b>Markdown</b></li>
+                     <li><b>Git</b> and <b>github</b></li>
+                     <li><b>C#</b></li>
+                     <li><b>.NET</b> Framework</li>
+                  </ul>
+               </div>
 
-  <div class="Curriculum">
-    <h1 class="Title">Engineering cumputer student</h1>
-    <hr>
-    <h2 class="Name Title">Emmanuel Frias Aviña</h1>
-      <section>
-        <div class="contactData">
-          <div class="contactTitle">
-            Contact
-          </div>
-          <div>
-            <b>Email:</b><i id="email">emmanuelfriasdev@gmail.com</i>
-            <i class="fas fa-copy botonCopiar" id="copyEmail" onclick="CopyToClipboard('email')"></i>
-          </div>
-          <div>
-            <!-- phone number -->
-          </div>
-          <div>
-            <b>Website:</b>
-            <a href="https://emmanuelfrias.com">emmanuelfrias.com</a>
-          </div>
-          <div class="socialMedia">
-            <a href="https://www.linkedin.com/in/emmanuel-frias-aviña-741184196/">
-              <i class="fab fa-linkedin"></i>
-              <p>Emmanuel Frias Aviña</p>
-            </a>
-            <a href="https://github.com/DarkPrometheus">
-              <i class="fab fa-github-square"></i>
-              <p>DarkPrometheus</p>
-            </a>
-            <a href="#">
-              <i class="fab fa-discord"></i>
-              <p>Emmanuel.#0725</p>
-            </a>
-          </div>
-        </div>
+               <div class="profecionalExperience">
+                  <h2>Experience</h2>
+                  <hr />
+                  <h3>My own projects</h3>
+                  <h4>ReactJS</h4>
+                  <ul>
+                     <li><a href="https://github.com/DarkPrometheus/GifExpertApp" target="_blank" rel="noopener noreferrer">Gift Expert App</a></li>
+                     <li><a href="https://github.com/DarkPrometheus/curso-platzi-js" target="_blank" rel="noopener noreferrer">JavaScript Proyect</a></li>
+                     <li><a href="https://github.com/DarkPrometheus/DarkPrometheus.github.io" target="_blank" rel="noopener noreferrer">My web page</a></li>
+                  </ul>
+                  <h4>.NET Framework - C#</h4>
+                  <ul>
+                     <li><a href="https://github.com/DarkPrometheus/MessagesFinder" target="_blank" rel="noopener noreferrer">Messages Finder</a></li>
+                  </ul>
+                  <h3 class="margen">My job experience</h3>
+                  <h4>.NET Framework - C#</h4>
+                  <ul>
+                     <li>
+                        <p>Program for reading and viewing invoices .txt</p>
+                     </li>
+                     <li>
+                        <p>Program to generate quotes from .dbf database</p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="lenguages">
+                  <h2>Lenguages</h2>
+                  <hr />
+                  <ul>
+                     <li>Spanish - Native</li>
+                     <li>English - B1</li>
+                  </ul>
+               </div>
 
-        <div class="mainContent">
-          <h2>About me</h2>
-          <hr>
-          <p class="Width">
-            I'm a <b>computer engineering student</b>
-            I enjoy working and learning on my computer.
-            I really like the .NET platform and web development, which are the two technologies that I master the most.
-          </p>
+               <div class="hobbies">
+                  <h2>Hobbies</h2>
+                  <hr />
 
-          <div class="knowledge">
-            <h2>Areas of knowledge</h2>
-            <hr />
-            <ul>
-              <li>Web development <b>HTML, CSS y JS</b></li>
-              <li><b>React JS</b></li>
-              <li><b>SQLite</b></li>
-              <li><b>Markdown</b></li>
-              <li><b>Git</b> and <b>github</b></li>
-              <li><b>C#</b></li>
-              <li><b>.NET</b> Framework</li>
-            </ul>
-          </div>
+                  <ul>
+                     <li>Video games</li>
+                     <li>Science</li>
+                     <li>Technology</li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+   </div>
+   <footer>
+      <div>
+         Icons
+         <a href="https://www.flaticon.es/autores/freepik" target="_blank" rel="noopener noreferrer" title="Freepik">Freepik</a>
+         from
+         <a href="https://www.flaticon.es/" target="_blank" rel="noopener noreferrer" title="Flaticon">www.flaticon.es</a>
+      </div>
+   </footer>
 
-          <div class="profecionalExperience">
-            <h2>Experience</h2>
-            <hr />
-            <h3>My own projects</h3>
-            <h4>ReactJS</h4>
-            <ul>
-              <li><a href="https://github.com/DarkPrometheus/GifExpertApp">Gift Expert App</a></li>
-              <li><a href="https://github.com/DarkPrometheus/curso-platzi-js">JavaScript Proyect</a></li>
-              <li><a href="https://github.com/DarkPrometheus/DarkPrometheus.github.io">My web page</a></li>
-            </ul>
-            <h4>.NET Framework - C#</h4>
-            <ul>
-              <li><a href="https://github.com/DarkPrometheus/MessagesFinder">Messages Finder</a></li>
-            </ul>
-            <h3 class="margen">My job experience</h3>
-            <h4>.NET Framework - C#</h4>
-            <ul>
-              <li><p>Program for reading and viewing invoices .txt</p></li>
-              <li><p>Program to generate quotes from .dbf database</p></li>
-            </ul>
-          </div>
-          <div class="lenguages">
-            <h2>Lenguages</h2>
-            <hr />
-            <ul>
-              <li>Spanish - Native</li>
-              <li>English - B1</li>
-            </ul>
-          </div>
+   <script src="https://kit.fontawesome.com/54f6399047.js" crossorigin="anonymous"></script>
 
-          <div class="hobbies">
-            <h2>Hobbies</h2>
-            <hr />
+   <script>
+      function CopyToClipboard(id_elemento) {
+         // Crea un campo de texto "oculto"
+         var aux = document.createElement("input");
 
-            <ul>
-              <li>Video games</li>
-              <li>Science</li>
-              <li>Technology</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-  </div>
-  <footer>
-    <div>
-      Icons
-      <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a>
-      from
-      <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
-    </div>
-  </footer>
+         // Asigna el contenido del elemento especificado al valor del campo
+         aux.setAttribute(
+            "value",
+            document.getElementById(id_elemento).innerHTML
+         );
 
-  <script src="https://kit.fontawesome.com/54f6399047.js" crossorigin="anonymous"></script>
+         // Añade el campo a la página
+         document.body.appendChild(aux);
 
-  <script>
-    function CopyToClipboard(id_elemento) {
-      // Crea un campo de texto "oculto"
-      var aux = document.createElement("input");
+         // Selecciona el contenido del campo
+         aux.select();
 
-      // Asigna el contenido del elemento especificado al valor del campo
-      aux.setAttribute(
-        "value",
-        document.getElementById(id_elemento).innerHTML
-      );
+         // Copia el texto seleccionado
+         document.execCommand("copy");
 
-      // Añade el campo a la página
-      document.body.appendChild(aux);
-
-      // Selecciona el contenido del campo
-      aux.select();
-
-      // Copia el texto seleccionado
-      document.execCommand("copy");
-
-      // Elimina el campo de la página
-      document.body.removeChild(aux);
-    }
-  </script>
+         // Elimina el campo de la página
+         document.body.removeChild(aux);
+      }
+   </script>
 </body>
 
 </html>
