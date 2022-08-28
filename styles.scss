@@ -34,8 +34,7 @@ body {
    @include column;
    align-items: center;
    height: 100vh;
-   background-image: url("img/fondo.jpg");
-   background-size: cover;
+   background-color: #575757;
    overflow-x: hidden;
    h1,
    h2,
@@ -47,13 +46,15 @@ body {
       height: 5vh;
       background-color: #262626;
       padding: 1rem;
-      width: 97.9%;
+      width: 100%;
+      border-bottom: 2px solid black;
       @include row;
       a {
          @include center;
          @include row;
          height: 100%;
          width: fit-content;
+         margin: 0 0 0 1rem;
          text-decoration: none;
          color: white;
          font-size: 1.2rem;
@@ -153,8 +154,6 @@ body {
                   margin: 0.5rem 0 0 1rem;
                   p {
                      margin: 0.3rem 0 0 0;
-                     b {
-                     }
                   }
                }
             }
@@ -199,6 +198,7 @@ body {
                }
             }
             .profecionalExperience {
+               @include center;
                h4 {
                   text-align: left;
                   font-size: 1.4rem;
@@ -211,25 +211,15 @@ body {
                      margin-bottom: 0rem;
                   }
                }
-            }
-            .languages {
-               h2 {
+               p{
+                  width: 90%;
                }
-               hr {
+               h5{
+                  width: 90%;
+                  text-align: right;
                }
-               ul {
-                  li {
-                  }
-               }
-            }
-            .hobbies {
-               h2 {
-               }
-               hr {
-                  ul {
-                     li {
-                     }
-                  }
+               .MisProyectos{
+                  margin-top: 1rem;
                }
             }
          }
@@ -237,11 +227,13 @@ body {
    }
    footer {
       height: 5vh;
-      width: 97.9%;
+      width: 100%;
+      border-top: 2px solid black;
       background-color: #262626;
       padding: 1rem;
       color: white;
       div {
+         margin: 0 0 0 1rem;
          a {
             color: white;
          }
