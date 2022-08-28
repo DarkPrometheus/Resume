@@ -1,37 +1,61 @@
 # Resume
 ## Emmanuel Frias Aviña
-- email: emmanuel_frias16@hotmail.com
-- phone number: 664 --- ----
-- website: https://bit.ly/EmmProjects
 
-I'm a computer engineering student. I enjoy learning and working
-        on my computer. I consider that I have critical thinking and ability to
-        solve problems.
+- email: *emmanuelfriasdev@gmail.com*
+
+- website: www.emmanuelfrias.com
+
+I'm a **computer engineering student** I enjoy working and learning on my computer. I really like the .NET platform and web development, which are the two technologies that I master the most.
 
 ### Areas of knowledge
 ___
 
-- Skills developing desktops aplications with <b>C#</b></li>
+- Desarrollo web HTML, CSS and JS
+- SASS
+- React JS
+- SQL Server
 - SQLite
-- Small projects using React
 - Markdown
-- Git and github
+- Git y github
+- Blazor
+- C#
+- .NET Framework
 
 ### Professional experience
 ___
-#### My own projects
+> #### Freelance Developer
+>
+> I developed software for a company as a freelancer, I made desktop programs developed in Windows Forms with C#
+>
+> **Oct. 2021 - Ene. 2022**
 
-##### React
-- [WarzoneApp](http://bit.ly/EmmWarzoneApp)
-- [Intelli weather](http://bit.ly/EmmIntelliWeather)
-- [GifExpertApp](http://bit.ly/EmmGifExpertApp)
-##### C#
-- [Various exercises in C#](http://bit.ly/EmmCSharpEjercicios)
-- [City comparator](http://bit.ly/EmmCityComparator)
+> #### Intern at BG Group
+>
+> During this time I was an intern at BG Group developing a Blazor SPA from a desktop program already develope
+>
+> **Feb. 2022 - May 2022**
+
+> #### Web Developer at BG Group
+>
+> At the end of my internship I was hired as a web developer, maintaining a system already created in Web Forms and developing a new one in Blazor
+>
+> **May 2022 - Today**
+
+### Freelance jobs
+
+___
+
+> #### .NET Framework - C#
+>
+> - Program for reading and viewing .txt invoices
+>
+> - Program to generate quotes from .dbf database
+>
+> - Report generator system to export to excel from a DB .dbf
 
 ### Lenguages
 ___
-- Spanish - native
+- Spanish - Native
 - English - B1
 
 ### Hobbies
