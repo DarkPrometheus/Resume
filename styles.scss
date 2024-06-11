@@ -9,8 +9,10 @@
    margin-top: 1rem;
 }
 
-li {
-   list-style: none;
+ul{
+   li {
+      list-style: none;
+   }
 }
 
 a {
@@ -78,10 +80,16 @@ body {
          margin: 4rem 0 1rem 0;
       }
       .Name {
-         padding: 1rem 0 4rem 0;
+         padding: 1rem 0 0 0;
          font-size: 1.7rem;
          color: white;
          text-align: center;
+      }
+      .City{
+         background-color: #242424;
+         color: white;
+         padding: .3rem 0 4rem 0;
+         font-size: 1rem;
       }
       hr {
          width: 75%;
@@ -101,11 +109,12 @@ body {
             .title {
                background-color: white;
                width: 60%;
-               margin: 2rem 0 1rem 20%;
+               margin: .5rem 0 1rem 20%;
                text-align: center;
                padding: 1rem 0rem;
                font-size: 1.5rem;
                font-weight: bold;
+               border-radius: .3rem;
             }
             hr {
                width: 95%;
@@ -113,8 +122,24 @@ body {
             }
             div {
                padding-bottom: 0.5rem;
+               i{
+                  b{
+                     font-size: 1rem;
+                  }
+               }
                #email {
                   margin: 0 0.1rem 0 0.3rem;
+               }
+            }
+            #Phone{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               b{
+                  width: 100%;
+               }
+               i{
+                  margin: .5rem 0;
                }
             }
             b {
@@ -157,13 +182,42 @@ body {
                   }
                }
             }
+            .knowledge{
+               width: 95%;
+               ul{
+                  margin: 0.5rem 0 0 1rem;
+                  font-size: 1rem;
+                  li{
+                     font-size: .9rem;
+                  }
+                  ul{
+                     display: grid;
+                     grid-template-columns: repeat(2, 1fr);
+                     li{
+                        font-size: .9rem;
+                        b{
+                           font-size: .9rem;
+                        }
+                     }
+                  }
+               }
+            }
+            .SoftSkills{
+               width: 95%;
+               ul{
+                  margin: 0.5rem 0 0 1rem;
+                  li{
+                     margin: .2rem 0;
+                  }
+               }
+            }
          }
          .mainContent {
             background-color: #fafafa;
             padding: 1rem;
             h2 {
                font-size: 2rem;
-               margin-top: 0.7rem;
+               margin-top: 2.8rem;
             }
             h3 {
                font-size: 1.7rem;
@@ -190,36 +244,49 @@ body {
                width: 90%;
                margin-left: 5%;
             }
-            .knowledge {
-               ul {
-                  li {
-                     margin: 0 0 0.2rem 1rem;
-                  }
-               }
-            }
             .profecionalExperience {
                @include center;
-               h4 {
-                  text-align: left;
-                  font-size: 1.4rem;
+               .element{
+                  @include center;
                   width: 90%;
-                  margin: 1rem 0 0 5%;
-               }
-               li {
-                  margin-left: 1rem;
-                  &:last-child {
-                     margin-bottom: 0rem;
+                  h4 {
+                     text-align: left;
+                     font-size: 1.4rem;
+                     margin: 1rem 0 0 .3rem;
                   }
-               }
-               p{
-                  width: 90%;
-               }
-               h5{
-                  width: 90%;
-                  text-align: right;
+                  li {
+                     margin-left: 1rem;
+                     &:last-child {
+                        margin-bottom: 0rem;
+                     }
+                  }
+                  p{
+                     margin-top: .3rem;
+                     width: 90%;
+                  }
+                  h5{
+                     width: 90%;
+                     margin-top: .2rem;
+                     text-align: right;
+                  }
                }
                .MisProyectos{
                   margin-top: 1rem;
+               }
+            }
+            .container{
+               ul{
+                  display: flex;
+                  justify-content: space-evenly;
+                  li{
+                     display: flex;
+                     flex-direction: column;
+                     list-style: none;
+                     text-align: center;
+                     span{
+                        font-size: .9rem;
+                     }
+                  }
                }
             }
          }

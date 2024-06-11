@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Resume</title>
+   <link rel="stylesheet" href="./css/styles.min.css" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" />
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+
+   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   <script>
+      $(document).ready(function() {
+         console.log("Todo listo");
+         var botonCopiar = $(".botonCopiar");
+
+         botonCopiar.click(function() {
+            $(this).addClass("Clicado");
+            setInterval(function() {
+               botonCopiar.removeClass("Clicado")
+            }, 2500);
+            // alert("Copied!!");
+         });
+      });
+   </script>
+</head>
+
+<body>
+   <div class="Curriculum">
+      <h2 class="Title">Emmanuel Frias Aviña, 24 años</h1>
+         <hr>
+         <h1 class="Name">Ingeniero informático</h1>
+         <h2 class="City">Tijuana, Baja California</h2>
+         <section>
+            <div class="contactData">
+               <div class="title">Contacto</div>
+               <hr />
+               <div>
+                  <b>Correo:</b>
+                  <i id="email">emmanuelfriasdev@gmail.com</i>
+                  <!--<i class="fas fa-copy botonCopiar" id="copyEmail" onclick="CopyToClipboard('email')"></i>-->
+               </div>
+               <div>
+                  <b>Sitio web:</b>
+                  <a href="https://emmanuelfrias.com" target="_blank" rel="noopener noreferrer">emmanuelfrias.com</a>
+               </div>
+               <div id="Phone">
+                  <b>Teléfono:</b>
+                  <i href="https://emmanuelfrias.com" target="_blank" rel="noopener noreferrer">
+                     <b>664-555-5972</b>, entre las 8-20hrs UTC -8
+                  </i>
+               </div>
+               <div class="socialMedia">
+                  <a href="https://www.linkedin.com/in/emmanuel-frias-aviña-741184196/" target="_blank" rel="noopener noreferrer">
+                     <i class="fab fa-linkedin"></i>
+                     <p>Emmanuel Frias Aviña</p>
+                  </a>
+               </div>
+               <div class="education">
+                  <h2 class="title">Educación</h2>
+                  <hr />
+                  <div>
+                     <p><b>Ingeniería informática</b></p>
+                     <p>Instituto Tecnológico de Tijuana</p>
+                     <p>Ago 2017 - Dic 2022</p>
+                  </div>
+               </div>
+               <div class="knowledge">
+                  <h2 class="title">Habilidades</h2>
+                  <hr />
+                  <ul>
+                     <li style="font-size: 1rem;">Desarrollo de software</li>
+                     <li style="font-size: 1rem;">Microsoft Office</li>
+                     <li style="font-size: 1rem;">Gestión de redes sociales</li>
+                     <li style="font-size: 1rem;">Manejo de equipos de computo</li>
+                     <li style="font-size: 1rem;">Ingles - B1</li>
+                  </ul>
+               </div>
+               <div class="SoftSkills">
+                  <h2 class="title" style="width: 80%; margin-left: 10%;">Habilidades blandas</h2>
+                  <hr />
+                  <ul>
+                     <li>Organización</li>
+                     <li>Atención al detalle</li>
+                     <li>Resolución de problemas</li>
+                     <li>Flexibilidad y adaptabilidad</li>
+                     <li>Capacidad de auto organización</li>
+                     <li>Puntualidad</li>
+                     <li>Trabajo en equipo</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="mainContent">
+               <h2>Sobre mi</h2>
+               <hr>
+               <p class="Width">
+                  Soy un profesional con formación en <b>ingeniería informática</b> y una sólida base en tecnologías de desarrollo de software. Mi experiencia de 2 años en el desarrollo de software, me ha brindado habilidades valiosas en <b>resolución de problemas</b>, <b>atención al detalle</b> y <b>capacidad para aprender y adaptarme</b>.
+               </p>
+               <p class="Width" style="margin-top: .5rem;">
+                  A lo largo de estos años, he adquirido experiencia en la <b>gestión</b> y <b>organización</b> de datos e información, lo que me ha llevado a sentirme cómodo trabajando con documentos y registros. Mi formación en ingeniería informática me ha proporcionado una base sólida en la <b>lógica y la eficiencia de procesos</b>, habilidades que considero valiosas para llevar a cabo <b>tareas administrativas de manera eficaz</b>.
+               </p>
+               
+               <div class="profecionalExperience">
+                  <h2>Experiencia profesional</h2>
+                  <hr />
+                  <div class="element">
+                     <h4>Desarrollador web en Grupo Timex</h4>
+                     <p>Como desarrollador web, brindé apoyo y resolví desafíos en una aplicación de facturación, trabajé en el desarrollo de nuevas funciones y en la identificación y corrección de errores y creé aplicaciones más pequeñas para mejorar la eficiencia interna de la empresa.</p>
+                     <h5>Feb. 2023 - Ago. 2023</h5>
+                  </div>
+                  <div class="element">
+                     <h4>Desarrollador web en BG Group Consulting</h4>
+                     <p>Trabajé en un sistema existente basado de la empresa y contribuí al desarrollo de un nuevo proyecto.</p>
+                     <h5>Feb. 2022 - Sep. 2022</h5>
+                  </div>
+                  <div class="element">
+                     <h4>Desarrollador independiente</h4>
+                     <p>Trabajé de forma autónoma para una empresa, desarrollando aplicaciones de software personalizadas, incluyendo visualizadores de datos, generadores de informes y herramientas para diversos departamentos de la empresa.</p>
+                     <h5>Oct 2021 - Ene 2022 / Nov 2023 - Dic 2023</h5>
+                  </div>
+               </div>
+            </div>
+         </section>
+   </div>
+
+   <script src="https://kit.fontawesome.com/54f6399047.js" crossorigin="anonymous"></script>
+
+   <script>
+      function CopyToClipboard(id_elemento) {
+         // Crea un campo de texto "oculto"
+         var aux = document.createElement("input");
+
+         // Asigna el contenido del elemento especificado al valor del campo
+         aux.setAttribute(
+            "value",
+            document.getElementById(id_elemento).innerHTML
+         );
+
+         // Añade el campo a la página
+         document.body.appendChild(aux);
+
+         // Selecciona el contenido del campo
+         aux.select();
+
+         // Copia el texto seleccionado
+         document.execCommand("copy");
+
+         // Elimina el campo de la página
+         document.body.removeChild(aux);
+      }
+   </script>
+</body>
+
+</html>

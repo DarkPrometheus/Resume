@@ -7,7 +7,7 @@
   margin-top: 1rem;
 }
 
-li {
+ul li {
   list-style: none;
 }
 
@@ -33,8 +33,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-image: url("./img/fondo.jpg");
-  background-size: cover;
+  background-color: #575757;
   overflow-x: hidden;
 }
 body h1,
@@ -47,7 +46,8 @@ body nav {
   height: 5vh;
   background-color: #262626;
   padding: 1rem;
-  width: 97.9%;
+  width: 100%;
+  border-bottom: 2px solid black;
   display: flex;
   flex-direction: row;
 }
@@ -59,9 +59,9 @@ body nav a {
   display: flex;
   flex-direction: row;
   height: 100%;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0 0 0 1rem;
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
@@ -74,7 +74,6 @@ body nav img {
 body .Curriculum {
   background-color: #242424;
   width: 65%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   border-left: 2px black solid;
@@ -198,14 +197,17 @@ body .Curriculum section .mainContent .Width {
 body .Curriculum section .mainContent .knowledge ul li {
   margin: 0 0 0.2rem 1rem;
 }
+body .Curriculum section .mainContent .profecionalExperience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 body .Curriculum section .mainContent .profecionalExperience h4 {
   text-align: left;
   font-size: 1.4rem;
   width: 90%;
   margin: 1rem 0 0 5%;
-}
-body .Curriculum section .mainContent .profecionalExperience h5 {
-  background-color: red;
 }
 body .Curriculum section .mainContent .profecionalExperience li {
   margin-left: 1rem;
@@ -213,15 +215,26 @@ body .Curriculum section .mainContent .profecionalExperience li {
 body .Curriculum section .mainContent .profecionalExperience li:last-child {
   margin-bottom: 0rem;
 }
+body .Curriculum section .mainContent .profecionalExperience p {
+  width: 90%;
+}
+body .Curriculum section .mainContent .profecionalExperience h5 {
+  width: 90%;
+  text-align: right;
+}
 body .Curriculum section .mainContent .profecionalExperience .MisProyectos {
-  background-color: #242424;
+  margin-top: 1rem;
 }
 body footer {
   height: 5vh;
-  width: 97.9%;
+  width: 100%;
+  border-top: 2px solid black;
   background-color: #262626;
   padding: 1rem;
   color: white;
+}
+body footer div {
+  margin: 0 0 0 1rem;
 }
 body footer div a {
   color: white;

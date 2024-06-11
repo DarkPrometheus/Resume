@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover letter</title>
+    <link rel="stylesheet" href="./css/coverLetter.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="controls" class="controls">
+        <div>
+            <span>Posicion:</span>
+            <input type="text" id="txtPosition" placeholder="Posicion">
+        </div>
+        <div>
+            <span>Empresa:</span>
+            <input type="text" id="txtCompany" placeholder="Empresa">
+        </div>
+        <div>
+            <span>Ciudad:</span>
+            <input type="text" id="txtCity" placeholder="Ciudad" value="Tijuana, Baja California">
+        </div>
+        <div>
+            <span>Fuente:</span>
+            <input type="text" id="txtSource" placeholder="Fuente" value="LinkedIn">
+        </div>
+        <div class="butons">
+            <button onclick="sustituirTexto()">Sustituir texto</button>
+            <button id="botonEliminar">Eliminar</button>
+        </div>
+    </div>
+
+    <div class="title">
+        <h1>Emmanuel Frias</h1>
+        <span><span class="position">Position</span> Candidate</span>
+    </div>
+
+    <div class="contact">
+        <div>
+            <div class="element"><img src="/img/cover/email.png" alt=""><span>emmanuelfriasdev@gmail.com</span></div>
+            <div class="element"><img src="/img/cover/pin.png" alt=""><span>Tijuana, Baja California, Mexico</span></div>
+            <div class="element"><img src="/img/cover/linkedin.png" alt=""><span><a href="https://linkedin.com/in/emmanuel-frias-aviña" target="_blank">linkedin.com/in/emmanuel-frias-aviña</a></span></div>
+        </div>
+        <div>
+            <div class="element"><img src="/img/cover/smartphone-call.png" alt=""><span>+52 664-555-5972</span></div>
+            <div class="element"><img src="/img/cover/landing-page.png" alt=""><span><a href="https://www.emmanuelfrias.com" target="_blank">emmanuelfrias.com</a></span></div>
+        </div>
+    </div>
+
+    <div class="to">
+        <p><i>Para:</i></p>
+        <span class="company">Company</span>
+        <span class="city">City</span>
+    </div>
+
+    <div class="divition"><div class="line"></div> <div class="diamond"></div> <div class="line"></div></div>
+
+    <span class="saludo">Dear <b><span class="company">Company</span></b> team:</span>
+
+    <p>I am very pleased to express my interest in the position of <b><span class="position">Position</span></b> at <b><span class="company">company</span></b>, which I have had the opportunity to learn about through <b><span class="source">Source</span></b>. With my background in computer engineering and my 2 years of experience in the field, I am excited to apply for this exciting opportunity at your organization.</p>
+
+    <p>As a <b>computer engineer</b> with <b>2 years of experience</b> in <b>software development</b>, I have had the opportunity to work on a variety of projects that have strengthened my technical skills and my ability to effectively tackle challenges. Over the past year, I have been heavily involved with the <b>.NET</b> platform, which has allowed me to gain a deep understanding of its components and capabilities. My previous experience as a computer engineering student has provided me with a solid foundation in the fundamental principles of both <b>hardware</b> and <b>software</b>.</p>
+    
+    <span>My key strengths as a developer include:</span>
+    
+    <ol>
+        <li><b>Experience in .NET Application Development:</b> During my last year of work, I have been involved in application development using the .NET platform. I have collaborated on projects that have required the implementation of creative and efficient solutions, allowing me to enhance my problem-solving skills.</li>
+        <li><b>Passion for Technology:</b> As a computer engineering student, I have enjoyed exploring both hardware and software aspects. This passion for technology drives me to stay up-to-date with the latest trends and advancements in the field, which I consider essential in the ever-evolving world of computing.</li>
+        <li><b>Communication and Teamwork Skills:</b> My ability to communicate effectively and collaborate in interdisciplinary teams has been crucial to the success of the projects I have worked on. I firmly believe in the importance of working together to achieve common goals.</li>
+    </ol>
+    
+    <p>I am excited about the possibility of contributing to the success of <b><span class="company">company</span></b> and further developing my skills as part of your team. I look forward to the opportunity to discuss in detail how my skills and experience can be a valuable asset to your organization.</p>
+    
+    <p>Thank you for your time and consideration. I am available to answer any questions or provide additional information you may need.</p>
+    
+    <span>Thank you for your consideration, and have a great day.</span>
+
+    <div class="divition"><div class="line"></div> <div class="diamond"></div> <div class="line"></div></div>
+
+    <script>
+        // Función para obtener la fecha actual en formato dd/mm/aaaa
+        function obtenerFecha() {
+            const fechaActual = new Date();
+            const dia = String(fechaActual.getDate()).padStart(2, '0');
+            const mes = String(fechaActual.getMonth() + 1).padStart(2, '0'); // Sumamos 1 al mes porque en JavaScript los meses van de 0 a 11
+            const anio = fechaActual.getFullYear();
+            return `${dia}/${mes}/${anio}`;
+        }
+
+        // Obtener el elemento <span> por su ID
+        const spanFecha = document.getElementById("date");
+
+        // Asignar la fecha formateada al contenido del <span>
+        spanFecha.textContent = obtenerFecha();
+    </script>
+    <script>
+        // Función para sustituir el texto
+        function sustituirTexto() {
+            const txtPosition = document.getElementById("txtPosition").value;
+            const txtCompany = document.getElementById("txtCompany").value;
+            const txtCity = document.getElementById("txtCity").value;
+            const txtSource = document.getElementById("txtSource").value;
+
+            const spanPosition = document.querySelectorAll(".position");
+            console.log(spanPosition)
+            const spanCompany = document.querySelectorAll(".company");
+            const spanCity = document.querySelectorAll(".city");
+            const spanSource = document.querySelectorAll(".source");
+
+            // Iterar a través de todas las cajas y asignar el texto ingresado
+            spanPosition.forEach(function(caja) {
+                caja.textContent = txtPosition;
+            });
+            spanCompany.forEach(function(caja) {
+                caja.textContent = txtCompany;
+            });
+            spanCity.forEach(function(caja) {
+                caja.textContent = txtCity;
+            });
+            spanSource.forEach(function(caja) {
+                caja.textContent = txtSource;
+            });
+
+            document.title = "Cover letter - " + txtCompany + " - " + txtPosition;
+        }
+
+        // Obtener el botón y el div por su ID
+        const botonEliminar = document.getElementById("botonEliminar");
+        const divAEliminar = document.getElementById("controls");
+
+        // Agregar un evento de clic al botón
+        botonEliminar.addEventListener("click", function() {
+            // Eliminar el div
+            divAEliminar.remove();
+        });
+    </script>
+</body>
+</html>
+
+

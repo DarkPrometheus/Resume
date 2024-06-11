@@ -1,0 +1,182 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
+/* Cambiar el color del borde cuando el input está enfocado */
+input:focus {
+  outline: none;
+}
+
+/* Cambiar el color del texto del placeholder (texto de ejemplo) */
+input::placeholder {
+  color: #999;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2B353D;
+  margin-bottom: 5rem;
+  padding: 5rem 2rem;
+  /* Estilos para el botón */
+  /* Estilos para el botón cuando se pasa el mouse por encima */
+}
+.controls div {
+  display: flex;
+  padding: 0.5rem 0;
+}
+.controls div span {
+  display: block;
+  color: white;
+  width: 4.5rem;
+}
+.controls div input {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.controls button {
+  margin: 0 1rem;
+  margin-top: 2rem;
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: background-color 0.3s, color 0.3s; /* Animación de transición suave */
+}
+.controls button:hover {
+  background-color: #0056b3; /* Cambiar el color de fondo */
+}
+
+body {
+  padding: 4rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px #2B353D solid;
+  border-radius: 0.5rem;
+  padding: 0 0 1.5rem 0;
+}
+.title h1 {
+  margin: -1.5rem 0 1rem 0;
+  margin-top: -1rem;
+  padding: 0 7rem;
+  background-color: white;
+}
+.title span {
+  color: #EB443A;
+  font-size: 1.2rem;
+}
+
+.contact {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #2B353D;
+  margin: 0.8rem 0;
+  padding: 1rem 5rem;
+  border-radius: 0.5rem;
+  color: #cbcdce;
+}
+.contact div {
+  display: flex;
+  flex-direction: column;
+}
+.contact div .element {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0;
+}
+.contact div .element img {
+  width: 22px;
+  margin: 0 0.5rem 0 0;
+}
+.contact div .element span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact div .element span a {
+  color: #cbcdce;
+}
+.contact::after {
+  content: "";
+  position: absolute;
+  bottom: -17px; /* Ajusta la distancia del sobresaliente desde el borde inferior de la caja */
+  left: 50%; /* Coloca el sobresaliente en el centro horizontalmente */
+  transform: translateX(-50%);
+  width: 99%; /* Ancho del triángulo redondeado */
+  height: 35px; /* Altura del triángulo redondeado */
+  background-color: transparent;
+  border-bottom-left-radius: 50%; /* Hace que el borde inferior izquierdo sea redondeado */
+  border-bottom-right-radius: 50%; /* Hace que el borde inferior derecho sea redondeado */
+  z-index: 1; /* Asegura que el sobresaliente esté por encima de la caja */
+  background-color: #2B353D;
+}
+
+.divition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: row;
+  margin: 2rem 0;
+}
+.divition .line {
+  width: 40%;
+  height: 2px;
+  background-color: #255859;
+  margin: 0 2.5rem;
+}
+.divition .diamond {
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: #255859;
+  position: relative;
+  top: -20px;
+}
+.divition .diamond::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #255859;
+}
+
+.saludo {
+  margin: 2rem 0;
+}
+
+.to {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.to p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgb(131, 131, 131);
+}
+
+.final {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=coverLetter.css.map */
